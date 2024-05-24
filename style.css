@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff;
+    color: black;
+    line-height: normal;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-nav form{
+    margin:10px 20px;
+}
+.top-nav .search{
+    width: 150px;
+    height:40px;
+    margin-bottom: 10px;
+    margin-right:10px ;
+    border-radius: 3px;
+}
+.top-nav .search-btn{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+    color: #fff;
+}
+.top-nav h1{
+    font-weight: bold;
+}
+.hero button{
+    position:relative;
+    top:0;
+    left: 45%;
+    padding:15px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.hero button:hover{
+    /*border:1px solid red;*/
+}
+.brand-logos{
+    background-color:#1C3144;
+}
+.brand-logos .col-md-12{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.carousel-indicators li {
+    background-color: red;
+    width: 100px;
+    border-radius: 50%;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: red;
+    padding: 5px;
+    border-radius: 50%;
+}
+.new-arrivals .card{
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.new-arrivals .card:hover{
+    box-shadow: 5px 3px 32px -15px rgba(0,0,0,1);
+}
+.reccommendations .card{
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.reccommendations .card:hover{
+    box-shadow: 5px 3px 32px -15px rgba(0,0,0,1);
+}
+.story p{
+    line-height: 50px;
+}
+.story button{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+    color: #fff;
+}
+.contact{
+    background-color: #1C3144;
+    padding: 10px 30px;
+}
+.contact li{
+    list-style-type: none;
+}
+.contact li a{
+    text-decoration: none;
+    color: #fff;
+}
+.contact li a:hover{
+    color: gray;
+}
+.contact li svg:hover{
+    background-color: gray;
+}
+.contact h4{
+    color: #fff;
+}
+.contact .socials{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}

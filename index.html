@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Jeffreys Toys</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container-fluid">
+    <header>
+        <div class="top-nav">
+            <form action="">
+                <input type="search" name="search" id="search" class="search" placeholder="Search products">
+                <input type="submit" value="Search" class="search-btn">
+            </form>
+            <h1>Jeffreys Toys</h1>
+            <img src="images/logo.png" alt="Logo" width="100px">
+        </div>
+        <hr style="color: #fff;">
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#">Jeffreys Toys</a>
+
+            <!-- Toggler/collapsible Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            News & Events
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Link 1</a>
+                            <a class="dropdown-item" href="#">Link 2</a>
+                            <a class="dropdown-item" href="#">Link 3</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="hero">
+            <img src="images/realistic-scene-with-young-children-with-autism-playing.jpg" alt="hero image" width="100%" class="img-fluid">
+            <button>Shop Now</button>
+        </div>
+        <!-- Brands carousel -->
+        <h2 class="text-center">Our Favourite Brands</h2>
+        <div class="brand-logos">
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="images/barbie.png" alt="barbie" width="100px" class="img-fluid"/>
+                    <img src="images/lego.png" alt="lego" width="100px" class="img-fluid"/>
+                    <img src="images/nerf.png" alt="nerf" width="100px" class="img-fluid"/>
+                    <img src="images/mega.png" alt="mega" width="100px" class="img-fluid"/>
+                    <img src="images/hotwheels.png" alt="hotwheels" width="100px" class="img-fluid"/>
+                    <img src="images/toystory.png" alt="toystory" width="100px" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        
+        <!-- New Arrivals -->
+        <h2 class="text-center">New Arrivals</h2>
+        <div class="new-arrivals">
+            <div id="newArrivalsCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#newArrivalsCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#newArrivalsCarousel" data-slide-to="1"></li>
+                    <li data-target="#newArrivalsCarousel" data-slide-to="2"></li>
+                </ul>
+                
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card" style="width:100%">
+                                    <img class="card-img-top" src="products/product1.jpg"Card image" class="img-fluid">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Spiderman Watch</h4>
+                                        <p class="card-text">Ksh 1200</p>
+                                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card" style="width:100%">
+                                    <img class="card-img-top" src="products/product2.jpg" alt="Card image" class="img-fluid" width="300px">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Truck</h4>
+                                        <p class="card-text">ksh 1500</p>
+                                        <a href="#" class="btn btn-primary">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card" style="width:100%">
+                                    <img class="card-img-top" src="products/product3.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Product 3</h4>
+                                        <p class="card-text">Description of product 3.</p>
+                                        <a href="#" class="btn btn-primary">See Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card" style="width:100%">
+                                    <img class="card-img-top" src="products/product4.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Product 4</h4>
+                                        <p class="card-text">Description of product 4.</p>
+                                        <a href="#" class="btn btn-primary">See Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card" style="width:100%">
+                                    <img class="card-img-top" src="products/product5.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Product 5</h4>
+                                        <p class="card-text">Description of product 5.</p>
+                                        <a href="#" class="btn btn-primary">See Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card" style="width:100%">
+                                    <img class="card-img-top" src="products/product6.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Product 6</h4>
+                                        <p class="card-text">Description of product 6.</p>
+                                        <a href="#" class="btn btn-primary">See Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card" style="width:100%">
+                                    <img class="card-img-top" src="products/product7.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Product 7</h4>
+                                        <p class="card-text">Description of product 7.</p>
+                                        <a href="#" class="btn btn-primary">See Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card" style="width:100%">
+                                    <img class="card-img-top" src="products/product9.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Product 8</h4>
+                                        <p class="card-text">Description of product 8.</p>
+                                        <a href="#" class="btn btn-primary">See Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card" style="width:100%">
+                                    <img class="card-img-top" src="products/product8.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Product 9</h4>
+                                        <p class="card-text">Description of product 9.</p>
+                                        <a href="#" class="btn btn-primary">See Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#newArrivalsCarousel" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#newArrivalsCarousel" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+        <h2 class="text-center">Reccommendations</h2>
+        <div class="reccommendations">
+            <div id="demo" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+                
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <!-- First item -->
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card" style="width:100%">
+                                    <img class="card-img-top img-fluid" src="products/product1.jpg" alt="Spiderman Watch">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Spiderman Watch</h4>
+                                        <p class="card-text">Ksh 1200</p>
+                                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card" style="width:100%">
+                                    <img class="card-img-top img-fluid" src="products/product2.jpg" alt="Truck">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Truck</h4>
+                                        <p class="card-text">Ksh 1500</p>
+                                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card" style="width:100%">
+                                    <img class="card-img-top img-fluid" src="products/product3.jpg" alt="Product 3">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Product 3</h4>
+                                        <p class="card-text">Description of product 3.</p>
+                                        <a href="#" class="btn btn-primary">See Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Second item -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card" style="width:100%">
+                                    <img class="card-img-top img-fluid" src="products/product4.jpg" alt="Product 4">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Product 4</h4>
+                                        <p class="card-text">Description of product 4.</p>
+                                        <a href="#" class="btn btn-primary">See Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card" style="width:100%">
+                                    <img class="card-img-top img-fluid" src="products/product5.jpg" alt="Product 5">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Product 5</h4>
+                                        <p class="card-text">Description of product 5.</p>
+                                        <a href="#" class="btn btn-primary">See Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card" style="width:100%">
+                                    <img class="card-img-top img-fluid" src="products/product6.jpg" alt="Product 6">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Product 6</h4>
+                                        <p class="card-text">Description of product 6.</p>
+                                        <a href="#" class="btn btn-primary">See Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Third item -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card" style="width:100%">
+                                    <img class="card-img-top img-fluid" src="products/product7.jpg" alt="Product 7">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Product 7</h4>
+                                        <p class="card-text">Description of product 7.</p>
+                                        <a href="#" class="btn btn-primary">See Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card" style="width:100%">
+                                    <img class="card-img-top img-fluid" src="products/product8.jpg" alt="Product 8">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Product 8</h4>
+                                        <p class="card-text">Description of product 8.</p>
+                                        <a href="#" class="btn btn-primary">See Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card" style="width:100%">
+                                    <img class="card-img-top img-fluid" src="products/product9.jpg" alt="Product 9">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Product 9</h4>
+                                        <p class="card-text">Description of product 9.</p>
+                                        <a href="#" class="btn btn-primary">See Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+            
+
+        </div>
+        <h2 class="text-center">Our Story</h2>
+        <div class="story">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>
+                        Welcome to Jeffrey Toys, your one-stop online toy store where imagination knows no bounds! Founded by a lifelong toy enthusiast, our store offers a carefully
+                         curated collection of toys that inspire creativity, learning, and endless fun. From classic wooden puzzles to the latest interactive gadgets, each toy is 
+                         chosen with love and care to ensure it brings joy to children of all ages. At Jeffrey Toys, we believe in the magic of play and strive to create a delightful
+                          shopping experience with personalized touches and exceptional customer service. Join us on a whimsical journey where every toy has a story, and every child
+                        can discover their own world of wonder!
+                    </p>
+                    <button>Read More</button>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/queen.jpg" alt="queen">
+                </div>
+            </div>
+        </div>
+        <h2 class="text-center">Follow Us</h2>
+        <div class="follow">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-center">
+                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="50px" height="50px"><g fill="#ff0000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,3c-12.15,0 -22,9.85 -22,22c0,11.03 8.125,20.137 18.712,21.728v-15.897h-5.443v-5.783h5.443v-3.848c0,-6.371 3.104,-9.168 8.399,-9.168c2.536,0 3.877,0.188 4.512,0.274v5.048h-3.612c-2.248,0 -3.033,2.131 -3.033,4.533v3.161h6.588l-0.894,5.783h-5.694v15.944c10.738,-1.457 19.022,-10.638 19.022,-21.775c0,-12.15 -9.85,-22 -22,-22z"></path></g></g></svg></a>
+                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="50px" height="50px"><g fill="#ff0000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M16,3c-7.17,0 -13,5.83 -13,13v18c0,7.17 5.83,13 13,13h18c7.17,0 13,-5.83 13,-13v-18c0,-7.17 -5.83,-13 -13,-13zM37,11c1.1,0 2,0.9 2,2c0,1.1 -0.9,2 -2,2c-1.1,0 -2,-0.9 -2,-2c0,-1.1 0.9,-2 2,-2zM25,14c6.07,0 11,4.93 11,11c0,6.07 -4.93,11 -11,11c-6.07,0 -11,-4.93 -11,-11c0,-6.07 4.93,-11 11,-11zM25,16c-4.96,0 -9,4.04 -9,9c0,4.96 4.04,9 9,9c4.96,0 9,-4.04 9,-9c0,-4.96 -4.04,-9 -9,-9z"></path></g></g></svg></a>
+                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="50px" height="50px"><g fill="#ff0000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M6.91992,6l14.2168,20.72656l-14.9082,17.27344h3.17773l13.13867,-15.22266l10.44141,15.22266h10.01367l-14.87695,-21.6875l14.08008,-16.3125h-3.17578l-12.31055,14.26172l-9.7832,-14.26172z"></path></g></g></svg></a>
+                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="50px" height="50px"><g fill="#ff0000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,2c-12.682,0 -23,10.318 -23,23c0,3.96 1.023,7.854 2.963,11.29l-2.926,10.44c-0.096,0.343 -0.003,0.711 0.245,0.966c0.191,0.197 0.451,0.304 0.718,0.304c0.08,0 0.161,-0.01 0.24,-0.029l10.896,-2.699c3.327,1.786 7.074,2.728 10.864,2.728c12.682,0 23,-10.318 23,-23c0,-12.682 -10.318,-23 -23,-23zM36.57,33.116c-0.492,1.362 -2.852,2.605 -3.986,2.772c-1.018,0.149 -2.306,0.213 -3.72,-0.231c-0.857,-0.27 -1.957,-0.628 -3.366,-1.229c-5.923,-2.526 -9.791,-8.415 -10.087,-8.804c-0.295,-0.389 -2.411,-3.161 -2.411,-6.03c0,-2.869 1.525,-4.28 2.067,-4.864c0.542,-0.584 1.181,-0.73 1.575,-0.73c0.394,0 0.787,0.005 1.132,0.021c0.363,0.018 0.85,-0.137 1.329,1.001c0.492,1.168 1.673,4.037 1.819,4.33c0.148,0.292 0.246,0.633 0.05,1.022c-0.196,0.389 -0.294,0.632 -0.59,0.973c-0.296,0.341 -0.62,0.76 -0.886,1.022c-0.296,0.291 -0.603,0.606 -0.259,1.19c0.344,0.584 1.529,2.493 3.285,4.039c2.255,1.986 4.158,2.602 4.748,2.894c0.59,0.292 0.935,0.243 1.279,-0.146c0.344,-0.39 1.476,-1.703 1.869,-2.286c0.393,-0.583 0.787,-0.487 1.329,-0.292c0.542,0.194 3.445,1.604 4.035,1.896c0.59,0.292 0.984,0.438 1.132,0.681c0.148,0.242 0.148,1.41 -0.344,2.771z"></path></g></g></svg></a>
+                </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="text-center">Contact</h2>
+        <div class="contact">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Quick nav</h4>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">Contact</a></li>
+                </div>
+                <div class="col-md-4">
+                    <h4>Useful links</h4>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">Toys</a></li>
+                    <li><a href="">Events</a></li>
+                    <li><a href="">Blog</a></li>
+                </div>
+                <div class="col-md-4">
+                    <h4>Contact</h4>
+                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="50px" height="50px"><g fill="#fff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,3c-12.15,0 -22,9.85 -22,22c0,11.03 8.125,20.137 18.712,21.728v-15.897h-5.443v-5.783h5.443v-3.848c0,-6.371 3.104,-9.168 8.399,-9.168c2.536,0 3.877,0.188 4.512,0.274v5.048h-3.612c-2.248,0 -3.033,2.131 -3.033,4.533v3.161h6.588l-0.894,5.783h-5.694v15.944c10.738,-1.457 19.022,-10.638 19.022,-21.775c0,-12.15 -9.85,-22 -22,-22z"></path></g></g></svg></a>
+                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="50px" height="50px"><g fill="#fff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M16,3c-7.17,0 -13,5.83 -13,13v18c0,7.17 5.83,13 13,13h18c7.17,0 13,-5.83 13,-13v-18c0,-7.17 -5.83,-13 -13,-13zM37,11c1.1,0 2,0.9 2,2c0,1.1 -0.9,2 -2,2c-1.1,0 -2,-0.9 -2,-2c0,-1.1 0.9,-2 2,-2zM25,14c6.07,0 11,4.93 11,11c0,6.07 -4.93,11 -11,11c-6.07,0 -11,-4.93 -11,-11c0,-6.07 4.93,-11 11,-11zM25,16c-4.96,0 -9,4.04 -9,9c0,4.96 4.04,9 9,9c4.96,0 9,-4.04 9,-9c0,-4.96 -4.04,-9 -9,-9z"></path></g></g></svg></a>
+                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="50px" height="50px"><g fill="#fff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M6.91992,6l14.2168,20.72656l-14.9082,17.27344h3.17773l13.13867,-15.22266l10.44141,15.22266h10.01367l-14.87695,-21.6875l14.08008,-16.3125h-3.17578l-12.31055,14.26172l-9.7832,-14.26172z"></path></g></g></svg></a>
+                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="50px" height="50px"><g fill="#fff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,2c-12.682,0 -23,10.318 -23,23c0,3.96 1.023,7.854 2.963,11.29l-2.926,10.44c-0.096,0.343 -0.003,0.711 0.245,0.966c0.191,0.197 0.451,0.304 0.718,0.304c0.08,0 0.161,-0.01 0.24,-0.029l10.896,-2.699c3.327,1.786 7.074,2.728 10.864,2.728c12.682,0 23,-10.318 23,-23c0,-12.682 -10.318,-23 -23,-23zM36.57,33.116c-0.492,1.362 -2.852,2.605 -3.986,2.772c-1.018,0.149 -2.306,0.213 -3.72,-0.231c-0.857,-0.27 -1.957,-0.628 -3.366,-1.229c-5.923,-2.526 -9.791,-8.415 -10.087,-8.804c-0.295,-0.389 -2.411,-3.161 -2.411,-6.03c0,-2.869 1.525,-4.28 2.067,-4.864c0.542,-0.584 1.181,-0.73 1.575,-0.73c0.394,0 0.787,0.005 1.132,0.021c0.363,0.018 0.85,-0.137 1.329,1.001c0.492,1.168 1.673,4.037 1.819,4.33c0.148,0.292 0.246,0.633 0.05,1.022c-0.196,0.389 -0.294,0.632 -0.59,0.973c-0.296,0.341 -0.62,0.76 -0.886,1.022c-0.296,0.291 -0.603,0.606 -0.259,1.19c0.344,0.584 1.529,2.493 3.285,4.039c2.255,1.986 4.158,2.602 4.748,2.894c0.59,0.292 0.935,0.243 1.279,-0.146c0.344,-0.39 1.476,-1.703 1.869,-2.286c0.393,-0.583 0.787,-0.487 1.329,-0.292c0.542,0.194 3.445,1.604 4.035,1.896c0.59,0.292 0.984,0.438 1.132,0.681c0.148,0.242 0.148,1.41 -0.344,2.771z"></path></g></g></svg></a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p class="text-center">&copy; 2023 Jeffrey's Toys. All rights reserved.</p>
+    </footer>
+</div>
+</body>
+</html>
