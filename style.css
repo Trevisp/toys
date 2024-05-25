@@ -10,6 +10,7 @@ body{
     color: black;
     line-height: normal;
     font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
 }
 
 .top-nav {
@@ -40,7 +41,7 @@ body{
 .hero button{
     position:relative;
     top:0;
-    left: 45%;
+    left: 50%;
     padding:15px;
     background-color: red;
     color: #fff;
@@ -76,6 +77,8 @@ body{
     border: 1px solid black;
     border-radius: 5px;
     cursor: pointer;
+    margin: 10px;
+    padding :5px;
 }
 .new-arrivals .card:hover{
     box-shadow: 5px 3px 32px -15px rgba(0,0,0,1);
@@ -84,6 +87,8 @@ body{
     border: 1px solid black;
     border-radius: 5px;
     cursor: pointer;
+    margin: 10px;
+    padding :5px;
 }
 .reccommendations .card:hover{
     box-shadow: 5px 3px 32px -15px rgba(0,0,0,1);
@@ -122,4 +127,31 @@ body{
     display: flex;
     flex-direction: row;
     gap: 20px;
+}
+@media screen(max-width :768px) {
+    body{
+        font: size 16px;
+    }
+    .top-nav h1{
+        font-size: 16px;
+    }
+    .top-nav img{
+        width:50px;
+    }
+    .top-nav .search{
+        width :50px;
+    }
+    .top-nav .search-btn{
+        padding :5px;
+    }
+    .hero button {
+        margin-top:15px;
+        padding :10px;
+    }
+    .brand-logos img{
+        width:50px;
+    }
+    .card{
+        width: 80%;
+    }
 }
