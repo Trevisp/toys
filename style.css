@@ -74,8 +74,8 @@ body{
     border-radius: 50%;
 }
 .new-arrivals .card {
- width: 190px;
- height: 254px;
+ width: 500px;
+ height: 500px;
  padding: .8em;
  background: #f5f5f5;
  position: relative;
@@ -85,8 +85,6 @@ body{
 
 .new-arrivals .card-img {
  background-color: #ffcaa6;
- height: 40%;
- width: 100%;
  border-radius: .5rem;
  transition: .3s ease;
 }
@@ -95,7 +93,7 @@ body{
  padding-top: 10%;
 }
 
-.new-arrivals svg {
+.card svg {
  width: 20px;
  height: 20px;
 }
@@ -110,19 +108,8 @@ body{
 }
 
 /*Text*/
-.new-arrivals .text-title {
- font-weight: 900;
- font-size: 1.2em;
- line-height: 1.5;
-}
-
-.new-arrivals .text-body {
- font-size: .9em;
- padding-bottom: 10px;
-}
-
 /*Button*/
-.new-arrivals .card-button {
+.new-arrivals .card button {
  border: 1px solid #252525;
  display: flex;
  padding: .3em;
