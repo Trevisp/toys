@@ -172,6 +172,9 @@ body{
         font-size: 18px;
         font-weight: bold;
     }
+    .brand-logos img{
+        width:50px;
+    }
     .story p{
         line-height: 32px;
     }
