@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container-fluid">
+<div class="container">
     <header>
         <div class="top-nav">
             <form action="">
@@ -29,7 +29,7 @@
                 <input type="submit" value="Search" class="search-btn">
             </form>
             <h1>Jeffreys Toys</h1>
-            <img src="images/logo.png" alt="Logo" width="100px">
+            <img src="images/logo.png" alt="Logo" width="150px">
         </div>
         <hr style="color: #fff;">
         <nav class="navbar navbar-expand-md bg-dark navbar-dark">
@@ -71,9 +71,9 @@
     
     <main>
         <div class="hero">
-            <img src="images/realistic-scene-with-young-children-with-autism-playing.jpg" alt="hero image" width="100%" class="img-fluid">
-            <hr>
+            <img src="images/realistic-scene-with-young-children-with-autism-playing.jpg" alt="hero image" class="img-fluid">
             <button>Shop Now</button>
+            <hr>
         </div>
         <!-- Brands carousel -->
         <h2 class="text-center">Our Favourite Brands</h2>
@@ -97,9 +97,9 @@
 
         <!-- Indicators -->
         <ul class="carousel-indicators">
-          <li data-target="new-arrivals" data-slide-to="0" class="active"></li>
-          <li data-target="new-arrivals" data-slide-to="1"></li>
-          <li data-target="new-arrivals" data-slide-to="2"></li>
+          <li data-target="#new-arrivals" data-slide-to="0" class="active"></li>
+          <li data-target="#new-arrivals" data-slide-to="1"></li>
+          <li data-target="#new-arrivals" data-slide-to="2"></li>
         </ul>
       
         <!-- The slideshow -->
@@ -360,10 +360,10 @@
         </div>
       
     <!-- Left and right controls -->
-    <a class="carousel-control-prev" href="new-arrivals" data-slide="prev">
+    <a class="carousel-control-prev" href="#new-arrivals" data-slide="prev">
       <span class="carousel-control-prev-icon"></span>
     </a>
-    <a class="carousel-control-next" href="new-arrivals" data-slide="next">
+    <a class="carousel-control-next" href="#new-arrivals" data-slide="next">
       <span class="carousel-control-next-icon"></span>
     </a>
 </div>
@@ -371,13 +371,13 @@
         <hr>
         <h2 class="text-center">Reccommendations</h2>
         <div class="reccommendations">
-            <div id="demo" class="carousel slide" data-ride="carousel">
+            <div id="reccommendations" class="carousel slide" data-ride="carousel">
 
         <!-- Indicators -->
         <ul class="carousel-indicators">
-          <li data-target="reccommendations" data-slide-to="0" class="active"></li>
-          <li data-target="reccommendations" data-slide-to="1"></li>
-          <li data-target="reccommendations" data-slide-to="2"></li>
+          <li data-target="#reccommendations" data-slide-to="0" class="active"></li>
+          <li data-target="#reccommendations" data-slide-to="1"></li>
+          <li data-target="#reccommendations" data-slide-to="2"></li>
         </ul>
       
         <!-- The slideshow -->
@@ -638,10 +638,10 @@
         </div>
       
     <!-- Left and right controls -->
-    <a class="carousel-control-prev" href="reccommendations" data-slide="prev">
+    <a class="carousel-control-prev" href="#reccommendations" data-slide="prev">
       <span class="carousel-control-prev-icon"></span>
     </a>
-    <a class="carousel-control-next" href="reccommendations" data-slide="next">
+    <a class="carousel-control-next" href="#reccommendations" data-slide="next">
       <span class="carousel-control-next-icon"></span>
     </a>
 </div>
