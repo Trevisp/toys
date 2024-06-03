@@ -22,14 +22,14 @@ body{
     margin:10px 20px;
 }
 .top-nav .search{
-    width: 150px;
-    height:40px;
+    width: 200px;
+    height:50px;
     margin-bottom: 10px;
     margin-right:10px ;
     border-radius: 3px;
 }
 .top-nav .search-btn{
-    padding: 10px;
+    padding:15px;
     border: none;
     border-radius: 5px;
     background-color: red;
@@ -39,21 +39,19 @@ body{
     font-weight: bold;
 }
 .hero button{
-    position:relative;
-    top:0;
-    left: 50%;
-    padding:15px;
     background-color: red;
     color: #fff;
+    padding: 2%;
     border: none;
     border-radius: 5px;
-    font-weight: bold;
+    position: relative;
+    left: 50%;
 }
 .hero button:hover{
-    /*border:1px solid red;*/
+    border:1px solid black;
 }
 .brand-logos{
-    background-color:#1C3144;
+    background-color:#343a40;
 }
 .brand-logos .col-md-12{
     display: flex;
@@ -80,6 +78,7 @@ body{
    /* background-color: #1C3144;*/
     padding:5px;
     border-radius:5px ;
+    cursor: pointer;
 }
 .card-footer{
     display: flex;
@@ -140,27 +139,45 @@ body{
     flex-direction: row;
     gap: 20px;
 }
-@media screen(max-width :768px) {
+@media(max-width:768px){
     body{
-        font: size 16px;
+        font-size: 16px;
     }
-    .top-nav img{
-        width:50px;
-    }
-    .top-nav .search{
-        width :80px;
-    }
-    .top-nav .search-btn{
-        padding :5px;
-    }
-    .hero button {
-        position :relative;
-        top:0;
-        left:0;
-        margin-top:15px;
-        padding :10px;
+    .card{
+        width: 350px;
+        margin: 5px;
     }
     .brand-logos img{
-        width:50px;
+        width: 80px;
+    }
+    .story p{
+        line-height: 32px;
+    }
+    .contact svg{
+        width: 40px;
+        height: 40px;
+    }
+}
+@media(max-width:480px){
+    body{
+        font-size: 16px;
+    }
+    .top-nav .search{
+        width: 140px;
+        height: 40px;
+    }
+    .top-nav img{
+        width: 100px;
+    }
+    .top-nav h1{
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .story p{
+        line-height: 32px;
+    }
+    .contact svg{
+        width: 30px;
+        height: 30px;
     }
 }
