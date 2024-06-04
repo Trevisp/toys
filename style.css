@@ -81,7 +81,6 @@ body{
     width: 400px;
     border: 1 px solid black;
     margin: 10px;
-    background-color: #343a40;
     padding:5px;
     border-radius:5px ;
     cursor: pointer;
@@ -93,7 +92,6 @@ body{
     display: flex;
     justify-content: space-between;
     padding: 5px;
-    background-color: #fff;
     color: black;
     border-radius: 5px;
 }
