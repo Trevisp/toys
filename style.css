@@ -71,13 +71,16 @@ body{
     border-radius: 50%;
 }
 .card{
-    width: 350px;
+    width: 400px;
     border: 1 px solid black;
     margin: 10px;
    /* background-color: #1C3144;*/
     padding:5px;
     border-radius:5px ;
     cursor: pointer;
+}
+.card-image{
+    width:100%;
 }
 .card-footer{
     display: flex;
@@ -155,6 +158,9 @@ body{
     .contact svg{
         width: 40px;
         height: 40px;
+    }
+    .card-image img{
+    width:100%;
     }
 }
 @media(max-width:480px){
