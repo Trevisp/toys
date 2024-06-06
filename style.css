@@ -50,7 +50,7 @@ body{
     border:1px solid black;
 }
 .brand-logos{
-    background-color:#343a40;
+   /* background-color:#343a40;*/
 }
 .brand-logos .col-md-12{
     display: flex;
