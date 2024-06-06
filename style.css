@@ -142,7 +142,7 @@ nav{
     gap: 20px;
 }
 svg:hover{
-    background-color:red;
+    color:red;
 }
 @media(max-width:768px){
     body{
