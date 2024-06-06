@@ -141,6 +141,9 @@ nav{
     flex-direction: row;
     gap: 20px;
 }
+svg:hover{
+    background-color:red;
+}
 @media(max-width:768px){
     body{
         font-size: 16px;
